@@ -1,36 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ramon\\Documents\\Desenvolvimentos\\C#\\Testes\\RabbitMQ\\HelloWorld\\Receive\\Receive.csproj": {}
+    "C:\\projects\\personal\\MessageBus\\RabbitMQ_Examples\\HelloWorld\\Receive\\Receive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ramon\\Documents\\Desenvolvimentos\\C#\\Testes\\RabbitMQ\\HelloWorld\\Receive\\Receive.csproj": {
+    "C:\\projects\\personal\\MessageBus\\RabbitMQ_Examples\\HelloWorld\\Receive\\Receive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ramon\\Documents\\Desenvolvimentos\\C#\\Testes\\RabbitMQ\\HelloWorld\\Receive\\Receive.csproj",
+        "projectUniqueName": "C:\\projects\\personal\\MessageBus\\RabbitMQ_Examples\\HelloWorld\\Receive\\Receive.csproj",
         "projectName": "Receive",
-        "projectPath": "C:\\Users\\ramon\\Documents\\Desenvolvimentos\\C#\\Testes\\RabbitMQ\\HelloWorld\\Receive\\Receive.csproj",
-        "packagesPath": "C:\\Users\\ramon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ramon\\Documents\\Desenvolvimentos\\C#\\Testes\\RabbitMQ\\HelloWorld\\Receive\\obj\\",
+        "projectPath": "C:\\projects\\personal\\MessageBus\\RabbitMQ_Examples\\HelloWorld\\Receive\\Receive.csproj",
+        "packagesPath": "C:\\Users\\RamonArrudaSilva\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\personal\\MessageBus\\RabbitMQ_Examples\\HelloWorld\\Receive\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ramon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\projects\\personal\\MessageBus\\RabbitMQ_Examples\\HelloWorld\\Receive\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\nuget": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -38,15 +29,20 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "RabbitMQ.Client": {
               "target": "Package",
-              "version": "[6.2.1, )"
+              "version": "[6.8.1, )"
             }
           },
           "imports": [
@@ -55,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
