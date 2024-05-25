@@ -20,6 +20,8 @@ class Program
                      arguments: null);
 
         Console.WriteLine(" [*] Waiting for messages.");
+        Console.WriteLine(" Press any key to exit");
+
         var consumer = new EventingBasicConsumer(channel);
 
         consumer.Received += (model, ea) =>
@@ -27,14 +29,13 @@ class Program
             var body = ea.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
 
-            Console.WriteLine(" [x] Received {0}", message);
+            Console.WriteLine("[x] Message Received! Message: {0}", message);
         };
 
         channel.BasicConsume(queue: "hello", 
-                                autoAck: true, 
-                                consumer: consumer);
+                             autoAck: true, 
+                             consumer: consumer);
 
-        Console.WriteLine(" Press [enter] to exit");
         Console.ReadKey();
     }
 }
