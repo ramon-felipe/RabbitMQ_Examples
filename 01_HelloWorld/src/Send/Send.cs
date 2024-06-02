@@ -1,6 +1,8 @@
 ﻿using RabbitMQ.Client;
 using System;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 const string HOST_NAME = "localhost";
 const string QUEUE_NAME = "hello";
