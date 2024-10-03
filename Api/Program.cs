@@ -31,7 +31,7 @@ app.MapGet("/publish", ([FromServices] IMessageBus bus) =>
 
     return "tested";
 })
-.WithName("GetWeatherForecast")
+.WithName("Publish")
 .WithOpenApi();
 
 app.Run();
